@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-rest-http
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/bgriggs-tenant/nodejs-rest-http/nodejs-rest-http@sha256:e90b626ff6e63774ca376e320970f113c5f69a32b2249af520bc73da06903d32
         name: my-nodejs
         ports:
         - containerPort: 3001
