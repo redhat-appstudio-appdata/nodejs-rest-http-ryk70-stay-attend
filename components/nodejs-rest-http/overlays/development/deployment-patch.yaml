@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-rest-http
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/bgriggs-tenant/nodejs-rest-http/nodejs-rest-http@sha256:e90b626ff6e63774ca376e320970f113c5f69a32b2249af520bc73da06903d32
+        name: my-nodejs
+        resources: {}
+status: {}

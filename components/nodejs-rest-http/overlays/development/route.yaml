@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-rest-http
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-rest-http
+    app.kubernetes.io/part-of: nodejs-rest-http
+  name: nodejs-rest-http58y3
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: nodejs-rest-http
+    weight: null
+status: {}
